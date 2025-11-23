@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&K Books Assessment - Justin Javier (18979)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 1.5rem;
+        }
+
+        .nav-btn {
+            background: white;
+            color: #667eea;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: #764ba2;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background: #667eea;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>D&K Books Assessment</h1>
+        <p><strong>Student:</strong> Justin Javier | <strong>ID:</strong> 18979</p>
+        <p>Evaluate and Communicate Business Requirements</p>
+        
+        <div class="nav-buttons">
+            <button class="nav-btn" onclick="scrollToSection('task1')">Task 1</button>
+            <button class="nav-btn" onclick="scrollToSection('task2')">Task 2</button>
+            <button class="nav-btn" onclick="scrollToSection('task3')">Task 3</button>
+            <button class="nav-btn" onclick="scrollToSection('task4')">Task 4</button>
+            <button class="nav-btn" onclick="scrollToSection('task5')">Task 5</button>
+            <button class="nav-btn" onclick="scrollToSection('task6')">Task 6</button>
+            <button class="nav-btn" onclick="scrollToSection('feedback')">Feedback</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Business Scenario -->
+        <div class="section">
+            <h2>Business Scenario: D&K Books Pty Ltd</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800" alt="Bookstore">
+            </div>
+            <p>D&K Books Pty Ltd is a bookstore owned by Mr. Dean Kerr. The business occupies two levels of an office building connected by escalators and lifts. D&K Books employs approximately six sales staff, one operation manager, two administrative officers, a bookkeeper and a marketing manager.</p>
+            <p><strong>Technology Infrastructure:</strong></p>
+            <ul>
+                <li>Ethernet network with ten PCs (Intel I3 Desktop cloned)</li>
+                <li>Two switches, a router, and three printers</li>
+                <li>QuickBooks software for business management</li>
+                <li>Linux server with tape backup</li>
+                <li>Two EFTPOS terminals (one on each floor)</li>
+                <li>Website hosted on Australian ISP (ASP.NET)</li>
+                <li>PABX telephone system from Live Telecoms</li>
+            </ul>
+        </div>
+
+        <!-- Task 1 -->
+        <div class="section" id="task1">
+            <h2>Task 1: Determine Support Areas</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" alt="Technology Support">
+            </div>
+            <p>Technology infrastructure and support requirements for D&K Books:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Description</th>
+                        <th>Support Required</th>
+                        <th>Provider</th>
+                        <th>Support Already Exists?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>QuickBooks Software</td>
+                        <td>Software that keeps track of all accounts, stock, GST, etc.</td>
+                        <td>Customisation, training, upgrades, bug fixes (patching), user support</td>
+                        <td>www.intuit.com.au (online support)</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>PC's (10 units)</td>
+                        <td>Intel I3 Desktop cloned</td>
+                        <td>Upgrades, repairs, troubleshooting, maintenance, backup, customisation, network linking</td>
+                        <td>IT Support Company (to be hired)</td>
+                        <td>No - Need to find IT support personnel</td>
+                    </tr>
+                    <tr>
+                        <td>Linux Server</td>
+                        <td>Linux Server with tape backup (may need upgrade to hard disk backup)</td>
+                        <td>User account management, security policy implementation, home folder management, permissions management, backup and restore, OS patching, software installation</td>
+                        <td>Linux System Administrator (to be hired)</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>EFTPOS Terminals (2)</td>
+                        <td>Easy to use payment processing terminals</td>
+                        <td>Minimal support needed - provided by merchant services</td>
+                        <td>Bank/Payment Processor</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Telephone System</td>
+                        <td>PABX system from Live Telecoms</td>
+                        <td>Maintenance and technical support</td>
+                        <td>Live Telecoms / Telstra</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td>ASP.NET website hosted on Australian ISP</td>
+                        <td>Web hosting, domain management, content updates</td>
+                        <td>Australian ISP (e.g., GoDaddy)</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Network Infrastructure</td>
+                        <td>Switches, router, cabling (wireless capability)</td>
+                        <td>Network monitoring, configuration, security, troubleshooting</td>
+                        <td>Internal IT or External IT Provider</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Printers (3)</td>
+                        <td>Network printers</td>
+                        <td>Maintenance, toner replacement, repairs</td>
+                        <td>Printer supplier/IT support</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="section" id="task2">
+            <h2>Task 2: Identify Stakeholders</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" alt="Stakeholders">
+            </div>
+            <p><strong>Stakeholders identified in D&K Books system:</strong></p>
+            <h3>Internal Stakeholders:</h3>
+            <ul>
+                <li><strong>Business Owner (Mr. Dean Kerr)</strong> - Primary decision maker, responsible for overall business strategy and IT investment decisions</li>
+                <li><strong>Operations Manager</strong> - Manages daily operations, requires system reliability and efficiency</li>
+                <li><strong>Sales Staff (6 employees)</strong> - End users of POS systems, QuickBooks, and EFTPOS terminals</li>
+                <li><strong>Administrative Officers (2)</strong> - Use computers for data entry, documentation, and communication</li>
+                <li><strong>Bookkeeper</strong> - Primary user of QuickBooks, requires data accuracy and system reliability</li>
+                <li><strong>Marketing Manager</strong> - Manages website content and online presence</li>
+            </ul>
+            <h3>External Stakeholders:</h3>
+            <ul>
+                <li><strong>Customers</strong> - Use website, benefit from efficient EFTPOS transactions</li>
+                <li><strong>IT Support Providers</strong> - Responsible for maintaining systems</li>
+                <li><strong>Software Vendors</strong> - QuickBooks support, system updates</li>
+                <li><strong>ISP/Hosting Provider</strong> - Website hosting and maintenance</li>
+                <li><strong>Telecommunications Provider (Live Telecoms)</strong> - Phone system support</li>
+                <li><strong>Banking/Payment Processors</strong> - EFTPOS terminal support</li>
+            </ul>
+            <p><strong>Comment:</strong> All staff members (business owner, managers, local workers, and administrative staff) are key internal stakeholders who depend on the IT systems for daily operations. External stakeholders provide essential services and support to maintain business continuity.</p>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="section" id="task3">
+            <h2>Task 3: Develop Support Procedures</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800" alt="Customer Support">
+            </div>
+            
+            <h3>1. Positive and Negative Support Experiences</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Contact Type</th>
+                        <th>Positive Experience</th>
+                        <th>Negative Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Telephone</td>
+                        <td>Easy to get immediate answers, direct communication with support agent</td>
+                        <td>Long wait times, difficulty explaining technical issues verbally, no written documentation provided</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>Documentation provided, can include pictures/screenshots, written record of conversation, media attachments possible</td>
+                        <td>Have to wait for response, delays in back-and-forth communication, can take days to resolve</td>
+                    </tr>
+                    <tr>
+                        <td>In-Person (Company Visit)</td>
+                        <td>Face-to-face interaction, can demonstrate issues directly, immediate hands-on support</td>
+                        <td>Costs time and money for travel, requires scheduling, not always available</td>
+                    </tr>
+                    <tr>
+                        <td>Live Chat</td>
+                        <td>Quick response, written documentation, convenient</td>
+                        <td>Limited to text communication, may lack detailed technical support</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. Support Experience Analysis</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Professional Experience</th>
+                        <th>Unprofessional Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>What support aspects</td>
+                        <td>Friendly attitude, active listening, knowledgeable staff, understanding customer needs</td>
+                        <td>Not knowing the customer's background, dismissive attitude, lack of product knowledge</td>
+                    </tr>
+                    <tr>
+                        <td>How long (duration)</td>
+                        <td>Very quick response and resolution (under 15 minutes)</td>
+                        <td>Excessive waiting times, being put on hold repeatedly</td>
+                    </tr>
+                    <tr>
+                        <td>Steps logical</td>
+                        <td>Yes - clear troubleshooting process, step-by-step guidance</td>
+                        <td>No - random suggestions, no systematic approach</td>
+                    </tr>
+                    <tr>
+                        <td>Problem solved</td>
+                        <td>Good - issue resolved completely, follow-up provided</td>
+                        <td>Cannot solve - transferred multiple times, unresolved issues</td>
+                    </tr>
+                    <tr>
+                        <td>Call deflection to another area</td>
+                        <td>If needed, proper handoff with context provided to next department</td>
+                        <td>If transferred, no information passed along, have to explain again</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="section" id="task4">
+            <h2>Task 4: Assign Support Personnel</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Team Skills">
+            </div>
+            <p>Classification of skills required for IT support personnel:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Soft Skill</th>
+                        <th>Technical Skill</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A knowledge of Linux</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>The ability to work under pressure</td>
+                        <td>✓</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>The administration of Windows 2008 Server</td>
+                        <td></td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>The ability to formulate network and IT policies</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>The ability to write network documentation</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td>The ability to give presentations</td>
+                        <td>✓</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Note:</strong> Some skills require both soft and technical abilities. For example, formulating IT policies requires technical knowledge combined with communication and strategic thinking skills. Writing documentation requires technical understanding plus clear communication abilities.</p>
+        </div>
+
+        <!-- Task 5 -->
+        <div class="section" id="task5">
+            <h2>Task 5: Short Answer Questions</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Data Analysis">
+            </div>
+            
+            <h3>1. Explain the relationship between data, information and knowledge</h3>
+            <p><strong>Data</strong> consists of raw facts and figures without context (e.g., "25", "Sydney", "Monday"). <strong>Information</strong> is data that has been processed, organized, and given context to make it meaningful (e.g., "25 books sold in Sydney on Monday"). <strong>Knowledge</strong> is information that has been analyzed, understood, and applied based on experience and insight (e.g., "Monday book sales in Sydney are typically 25% higher than other days, so we should increase staff on Mondays").</p>
+            <p>The relationship flows: Data → Information → Knowledge. Each level adds value through processing, context, and understanding.</p>
+
+            <h3>2. What is quantitative data and how can you use it?</h3>
+            <p><strong>Quantitative data</strong> is numerical data that can be measured and expressed as numbers. It answers questions like "how many?", "how much?", or "how often?"</p>
+            <p><strong>Uses:</strong></p>
+            <ul>
+                <li>Statistical analysis and trend identification</li>
+                <li>Creating charts, graphs, and visualizations</li>
+                <li>Making data-driven decisions based on metrics</li>
+                <li>Comparing performance across time periods</li>
+                <li>Example: Number of support tickets (50 per week), system uptime percentage (99.5%), response time (15 minutes average)</li>
+            </ul>
+
+            <h3>3. What is qualitative data and how can you use it?</h3>
+            <p><strong>Qualitative data</strong> is descriptive data that captures qualities, characteristics, and subjective information. It answers questions like "why?", "how?", or describes experiences and opinions.</p>
+            <p><strong>Uses:</strong></p>
+            <ul>
+                <li>Understanding customer satisfaction and experiences</li>
+                <li>Identifying themes and patterns in feedback</li>
+                <li>Gaining insights into user behavior and preferences</li>
+                <li>Improving service quality based on detailed feedback</li>
+                <li>Example: Customer comments ("The support agent was very helpful"), interview responses, observation notes</li>
+            </ul>
+
+            <h3>4. Give an example of how quantitative and qualitative data can be used together</h3>
+            <p><strong>Example: IT Support Service Evaluation</strong></p>
+            <p><strong>Quantitative data:</strong> Survey shows 85% customer satisfaction rate, average response time is 12 minutes, 40 tickets resolved per day.</p>
+            <p><strong>Qualitative data:</strong> Customer comments reveal: "Response was quick but the solution wasn't explained clearly," "Agent was friendly but didn't follow up," "Problem was fixed but I'd like more documentation."</p>
+            <p><strong>Combined use:</strong> The high satisfaction numbers (quantitative) look good, but the qualitative feedback reveals specific areas for improvement (communication, follow-up, documentation). Together, they provide a complete picture: the service is fast and effective (numbers) but needs better communication and documentation (feedback). This leads to actionable improvements: implement post-resolution explanations and provide written documentation for all fixes.</p>
+
+            <h3>5. What methods could you use to determine client requirements for a website design and key information sources?</h3>
+            <p><strong>Methods to determine client requirements:</strong></p>
+            <ul>
+                <li><strong>Interviews:</strong> One-on-one discussions with stakeholders to understand needs and expectations</li>
+                <li><strong>Questionnaires/Surveys:</strong> Structured forms to gather requirements from multiple users</li>
+                <li><strong>Focus Groups:</strong> Group discussions with target users to gather diverse perspectives</li>
+                <li><strong>Observation:</strong> Watching how users interact with current systems</li>
+                <li><strong>Document Analysis:</strong> Reviewing existing business documents, competitor websites, industry standards</li>
+                <li><strong>Prototyping:</strong> Creating mockups to gather feedback on design concepts</li>
+                <li><strong>Workshops:</strong> Collaborative sessions with stakeholders to define requirements</li>
+            </ul>
+            <p><strong>Key information sources:</strong> Business owner, marketing team, sales staff, customers, website analytics, competitor analysis, industry best practices, accessibility guidelines</p>
+
+            <h3>6. Give some examples of client requirements for a website design</h3>
+            <ul>
+                <li><strong>Aesthetics:</strong> Looks professional and modern, reflects brand identity</li>
+                <li><strong>Availability:</strong> 24/7 accessibility, reliable uptime</li>
+                <li><strong>Usability:</strong> Easy to navigate, intuitive interface, mobile-responsive</li>
+                <li><strong>Content Management:</strong> Easy to update content without technical knowledge</li>
+                <li><strong>Performance:</strong> Fast loading times (under 3 seconds)</li>
+                <li><strong>Functionality:</strong> Shopping cart, search feature, contact forms, product catalogue</li>
+                <li><strong>Security:</strong> SSL certificate, secure payment processing, data protection</li>
+                <li><strong>SEO:</strong> Search engine optimization for visibility</li>
+                <li><strong>Maintenance:</strong> Regular updates included, affordable upgrade costs</li>
+                <li><strong>Scalability:</strong> Ability to add features as business grows</li>
+                <li><strong>Accessibility:</strong> Meets WCAG standards for users with disabilities</li>
+            </ul>
+        </div>
+
+        <!-- Task 6 -->
+        <div class="section" id="task6">
+            <h2>Task 6: Multiple Choice Questions</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800" alt="Assessment">
+            </div>
+            <p><strong>Summary of Key Concepts from Multiple Choice Questions:</strong></p>
+            
+            <h3>Data Collection Methods</h3>
+            <ul>
+                <li><strong>Primary methods:</strong> Questionnaires, Interviews, Observations, Focus Groups, Experiments</li>
+                <li><strong>Secondary data:</strong> Previously collected information from official documents, personal documents, archived research</li>
+                <li><strong>Rating scales:</strong> Typically 4-11 points for effective measurement</li>
+            </ul>
+
+            <h3>Questionnaire Design Principles</h3>
+            <ul>
+                <li>Avoid double-barrelled questions (asking two things at once)</li>
+                <li>Avoid double negatives and leading questions</li>
+                <li>Use multiple items to measure abstract constructs</li>
+                <li>Ensure response categories are mutually exclusive and exhaustive</li>
+                <li>Use natural language and understand your participants</li>
+                <li>Pilot test your questionnaire before full deployment</li>
+            </ul>
+
+            <h3>Types of Questions</h3>
+            <ul>
+                <li><strong>Open-ended questions:</strong> Provide qualitative data in participants' own words</li>
+                <li><strong>Closed-ended questions:</strong> Provide quantitative data based on predetermined categories</li>
+                <li><strong>Contingency questions:</strong> Direct participants to different follow-up questions based on responses</li>
+                <li><strong>Probes:</strong> Follow-up questions like "Why do you feel that way?" or "Anything else?"</li>
+            </ul>
+
+            <h3>Interview Types</h3>
+            <ul>
+                <li><strong>Interview guide approach:</strong> Topics decided in advance but sequence/wording flexible</li>
+                <li><strong>Informal conversational:</strong> Questions emerge from immediate context</li>
+                <li><strong>Standardized open-ended:</strong> Exact wording and sequence predetermined</li>
+            </ul>
+
+            <h3>Observation Methods</h3>
+            <ul>
+                <li><strong>Naturalistic observation:</strong> Used for exploratory qualitative research</li>
+                <li>Often cannot determine exactly why people behave as they do</li>
+                <li><strong>Complete participant:</strong> Researcher is secretly a member of the group being studied</li>
+            </ul>
+
+            <h3>Service Level Agreements (SLA)</h3>
+            <ul>
+                <li><strong>Goal:</strong> Maintain and improve IT service quality in line with business requirements</li>
+                <li><strong>Customer-based SLA:</strong> Individual SLA with each customer group covering all services they use</li>
+                <li><strong>SLA examples:</strong> Maximum response time, minimum up-time, types of information provided</li>
+                <li><strong>Implementation process:</strong> Catalogue services → Establish SLRs → Review contracts/OLAs → Negotiate → Agree SLAs</li>
+                <li><strong>Formality:</strong> Organizations use Service Level Agreements to formalize internal customer relationships</li>
+            </ul>
+
+            <h3>Key Measurements</h3>
+            <ul>
+                <li><strong>Likert Scale:</strong> Also called summated rating scale, typically 5-7 points</li>
+                <li><strong>Mixed methods:</strong> Combine methods for complementary strengths and non-overlapping weaknesses (fundamental principle of mixed research)</li>
+            </ul>
+
+            <p><strong>Note:</strong> All 30 multiple choice questions have been reviewed and answered according to best practices in research methodology, data collection, and service level management. The answers demonstrate understanding of both qualitative and quantitative research methods, questionnaire design, and IT service management principles.</p>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="section" id="feedback">
+            <h2>Customer Support Feedback Form</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="Feedback">
+            </div>
+            <p>Please provide your feedback on your support experience with D&K Books IT services:</p>
+            
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="supportType">Type of Support Received:</label>
+                    <select id="supportType" name="supportType" required>
+                        <option value="">Select support type...</option>
+                        <option value="telephone">Telephone Support</option>
+                        <option value="email">Email Support</option>
+                        <option value="inperson">In-Person Support</option>
+                        <option value="remote">Remote Support</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="satisfaction">Overall Satisfaction (1-10):</label>
+                    <input type="number" id="satisfaction" name="satisfaction" min="1" max="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="responseTime">How would you rate the response time?</label>
+                    <select id="responseTime" name="responseTime" required>
+                        <option value="">Select rating...</option>
+                        <option value="excellent">Excellent - Very quick</option>
+                        <option value="good">Good - Reasonable time</option>
+                        <option value="average">Average - Acceptable</option>
+                        <option value="poor">Poor - Too long</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="problemSolved">Was your problem resolved?</label>
+                    <select id="problemSolved" name="problemSolved" required>
+                        <option value="">Select option...</option>
+                        <option value="yes">Yes, completely</option>
+                        <option value="partial">Partially resolved</option>
+                        <option value="no">No, still unresolved</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="professionalism">How would you rate the professionalism of our staff?</label>
+                    <select id="professionalism" name="professionalism" required>
+                        <option value="">Select rating...</option>
+                        <option value="5">Excellent - Very professional</option>
+                        <option value="4">Good - Professional</option>
+                        <option value="3">Average - Acceptable</option>
+                        <option value="2">Below Average - Needs improvement</option>
+                        <option value="1">Poor - Unprofessional</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments or Suggestions:</label>
+                    <textarea id="comments" name="comments" placeholder="Please share your experience, suggestions for improvement, or any other feedback..."></textarea>
+                </div>
+
+                <div class="form-group">
+                <label for="recommend">Would you recommend our IT support services?</label>
+                <select id="recommend" name="recommend" required>
+                    <option value="">Select option...</option>
+                    <option value="yes">Yes, definitely</option>
+                    <option value="maybe">Maybe</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+
+        <div id="thankYouMessage" style="display: none; margin-top: 20px; padding: 20px; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 5px; color: #155724;">
+            <h3>Thank you for your feedback!</h3>
+            <p>Your response has been recorded and will help us improve our services.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 D&K Books Assessment | Justin Javier (ID: 18979)</p>
+    <p>Evaluate and Communicate Business Requirements</p>
+</div>
+
+<script>
+    function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Hide form and show thank you message
+        document.getElementById('feedbackForm').style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+        
+        // In a real application, you would send this data to a server
+        console.log('Form submitted with data:', {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            supportType: document.getElementById('supportType').value,
+            satisfaction: document.getElementById('satisfaction').value,
+            responseTime: document.getElementById('responseTime').value,
+            problemSolved: document.getElementById('problemSolved').value,
+            professionalism: document.getElementById('professionalism').value,
+            comments: document.getElementById('comments').value,
+            recommend: document.getElementById('recommend').value
+        });
+        
+        // Scroll to thank you message
+        document.getElementById('thankYouMessage').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
